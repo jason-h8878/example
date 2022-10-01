@@ -4,13 +4,7 @@ tesdteteteytetrewqqtrfEWgt
 
 reyhgreuy6rtiu76tyiuytr
 
-tr
+殺人了
+......
 
-utr
-
-ut
-
-tur
-
-rtu
 

@@ -1,3 +1,5 @@
+好了不跟你說
+
 Git 和 GitHub 是兩個有關聯但不同的東西，Git 是一種版本管理的工具, 如同svn, 微軟的team foundation server。
 
 GitHub 則是一個網站提供免費的空間讓你擺放你程式的Source Code (原始碼)
