@@ -43,7 +43,7 @@ driver 就是一個控制瀏覽器的接口，可以挑chrome、firefox等來用
 所以輸入帳密時，我們必須找出代碼中，對應到帳密的欄位進行填寫，
 可以對著欄位按右鍵，查找該欄位的ID
 
-![image-20221002122557709](C:\Users\david\OneDrive\桌面\git-repos\example\image-20221002122557709.png)
+![image-20221002122557709](./image-20221002122557709.png)
 
 於是我們就有了第一段程式碼（可以從第30行開始看就好了）：
 
@@ -96,7 +96,7 @@ wait_then_click(driver, 'Button1')
 
 登入後就看到一行：本機無有效憑證，故無法網路下單，僅提供看盤資訊。
 
-![image-20221002122749533](C:\Users\david\OneDrive\桌面\git-repos\example\image-20221002122749533.png)
+![image-20221002122749533](./image-20221002122749533.png)
 
 但我們就是想要網路下單呀！所以，只能來個自動匯入憑證了！
 
@@ -134,7 +134,7 @@ wait_then_click(driver, 'Button1')
 什麼是iframe呢？白話來說就是網頁中的網頁，的意思…
 所以這個下單介面，就是網頁包網頁包網頁，如下圖：
 
-![image-20221002122832178](C:\Users\david\OneDrive\桌面\git-repos\example\image-20221002122832178.png)
+![image-20221002122832178](./image-20221002122832178.png)
 
 我們必須再深入兩層iframe，才能到達下單的真正網頁：
 
@@ -150,7 +150,7 @@ driver.switch_to.frame('OrderPanel')
 
 接下來就可以利用這個iframe下單了，總共有七個步驟，以漲停買入為例，如下圖：
 
-![image-20221002122906988](C:\Users\david\OneDrive\桌面\git-repos\example\image-20221002122906988.png)
+![image-20221002122906988](./image-20221002122906988.png)
 
 這邊要注意第三跟五的步驟，我們要等待特定的事件發生，才能繼續進行喔！
 因為這關係到網頁與新光證券的伺服器中間的認證，沒有等待就下不了單喔！
